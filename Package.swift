@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftMessageBar",
+    name: "SwiftMessageBarPM",
     platforms: [
         .iOS(.v12),
     ],
     products: [
         .library(
-            name: "SwiftMessageBar",
-            targets: ["SwiftMessageBar"]
+            name: "SwiftMessageBarPM",
+            targets: ["SwiftMessageBarPM"]
         ),
     ],
     targets: [
         .target(
-            name: "SwiftMessageBar",
+            name: "SwiftMessageBarPM",
             path: "SwiftMessageBar",
             resources: [
                 .process("Resources")
@@ -23,7 +23,7 @@ let package = Package(
         ),
         .testTarget(
             name: "SwiftMessageBarTests",
-            dependencies: ["SwiftMessageBar"],
+            dependencies: ["SwiftMessageBarPM"],
             path: "SwiftMessageBarTests"
         ),
     ]

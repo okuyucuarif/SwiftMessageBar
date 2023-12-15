@@ -2,7 +2,7 @@
 //  Copyright © 2020 Schnaub. All rights reserved.
 //
 
-@testable import SwiftMessageBar
+@testable import SwiftMessageBarPM
 import XCTest
 
 final class QueueTests: XCTestCase {
